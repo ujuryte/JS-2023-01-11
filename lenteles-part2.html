@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenteles part2</title>
+    <!-- internal CSS stilius -->
+    <style>
+        /* th {
+            text-align:left;
+            background:grey
+        } */
+        thead tr{
+            text-align:left;
+            background:grey
+        }
+        /* :nth-child() yra pseudo klases selektorius */
+        /* tbody tr:nth-child(4){
+            background: red;
+        } */
+       /* norint parinkti kas antra elementa: */
+        /* tbody tr:nth-child(2n){
+            background: red;
+        } */
+        /* lygynes (even) arba nelygines (odd) eilutes */
+        tbody tr:nth-child(odd){
+            background: red;
+        }
+        /* galioja hierarchija, kas zemiau, tas persiraso */
+        tbody tr:nth-child(3){
+            background: blue;
+        }
+        /* groteles nurodo kreipimasi i elementa turinti toki ID ir hierarchija nebegalioja */
+        #treciaEilute {
+            background: green
+        }
+        /* important perraso visa esama elemento stiliu */
+        /* tbody tr {
+            background:pink !important;
+        } */
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>preke</th>
+            <th>kiekis</th>
+            <th>kaina</th>
+            <th>suma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+           <!-- inline CSS stilius visada ima virsu (su viena islyga (!important)) -->
+            <tr id="treciaEilute" style="background:orange">
+                <td>3</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table style="width:100%">
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>preke</th>
+            <th>kiekis</th>
+            <th>kaina</th>
+            <th>suma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+           <!-- inline CSS stilius visada ima virsu (su viena islyga (!important)) -->
+            <tr id="treciaEilute" style="background:orange">
+                <td>3</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kompiuteris</td>
+                <td>3</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
